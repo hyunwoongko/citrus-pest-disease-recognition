@@ -2,7 +2,6 @@
 
 Citrus Pest Recognition Model and Android Application 🐛 <br>
 We use Convolutional Neural Network to classify <br>
-You can check our paper [here](https://www.researchgate.net/publication/334610555_Citrus_Pests_and_Diseases_Recognition_Model_Using_Weakly_Dense_Connected_Convolution_Network)
 <br><br>
 
 ## 1. App Demo
@@ -18,7 +17,20 @@ Below table represents about our citrus pest and disease dataset. We have 17 pes
 
 <br><br><br>
 
-## 3. LICENSE
+## 3. Paper
+
+If you use this code for your research, please cite our papers.
+```
+@inproceedings{Citrus Pests and Diseases Recognition Model,
+  title={Citrus Pests and Diseases Recognition Model Using Weakly Dense Connected Convolution Network},
+  author={Xing Shuli, Marely Lee,Keun-kwang Lee},
+  booktitle={Sensors},
+  year={2019}
+}
+```
+<br><br><br>
+
+## 4. LICENSE
 
     Copyright 2019 CBNU CS Dept, AI/Robot LAB.
     

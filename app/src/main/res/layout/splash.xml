@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="SplashView">
+
+        <variable
+            name="viewModel"
+            type="com.hyunwoong.pestsaver.core.viewmodel.SplashViewModel" />
+
+        <variable
+            name="activity"
+            type="com.hyunwoong.pestsaver.core.activity.SplashActivity" />
+
+    </data>
+
+
+    <FrameLayout
+        onViewCreate="@{()->viewModel.splash(activity)}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_sign_in">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/card_view"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="스마트 감귤\n\n병해충 지킴이"
+                android:textColor="#222222"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="75dp"
+                android:src="@drawable/citrus"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

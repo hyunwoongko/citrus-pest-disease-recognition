@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "805450425348",
+    "firebase_url": "https://pest-saver.firebaseio.com",
+    "project_id": "pest-saver",
+    "storage_bucket": "pest-saver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805450425348:android:623b51d4aacf9761e7c151",
+        "android_client_info": {
+          "package_name": "com.hyunwoong.pestsaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805450425348-kejuq5qqjqqqi48autjji6s4urta3ufc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hyunwoong.pestsaver",
+            "certificate_hash": "f28365b3377137a2131a94b72691f4772157e07c"
+          }
+        },
+        {
+          "client_id": "805450425348-9iokcnmt8nmke724jrhtupli4ojslubt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwaooDP9gHrTa-eAVQzsq8kkAjQFq8y68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805450425348-9iokcnmt8nmke724jrhtupli4ojslubt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

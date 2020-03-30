@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="MainView">
+
+        <variable
+            name="viewModel"
+            type="com.hyunwoong.pestsaver.core.viewmodel.MainViewModel" />
+
+        <variable
+            name="activity"
+            type="com.hyunwoong.pestsaver.core.activity.MainActivity" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_sign_in">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/card_view"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="224dp"
+                android:layout_height="224dp"
+                android:layout_margin="30dp"
+                android:background="#CCCCCC"
+                android:gravity="center"
+                android:padding="50dp"
+                android:text="이미지를 업로드 하고 분류하기 버튼을 눌러주세요."
+                android:textColor="#000000"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/line"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:onClick="@{()->viewModel.openAlbum(activity)}"
+                android:padding="10dp"
+                android:text="앨범에서 가져오기"
+                android:textColor="#444444"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/line"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:onClick="@{()->viewModel.classify(activity)}"
+                android:padding="10dp"
+                android:text="분류하기"
+                android:textColor="#444444"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{viewModel.progressBar}" />
+
+    </FrameLayout>
+</layout>

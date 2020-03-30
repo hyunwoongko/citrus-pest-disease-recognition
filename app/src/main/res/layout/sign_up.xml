@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="SignUpView">
+
+        <variable
+            name="viewModel"
+            type="com.hyunwoong.pestsaver.core.viewmodel.SignUpViewModel" />
+
+        <variable
+            name="activity"
+            type="com.hyunwoong.pestsaver.core.activity.SignUpActivity" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_sign_in">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/card_view"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:paddingBottom="60dp"
+                android:text="스마트 감귤\n\n병해충 지킴이"
+                android:textColor="#333333"
+                android:textSize="32sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="30dp"
+                android:paddingEnd="50dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:textColor="#444444"
+                    android:text="이메일   "
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:inputType="textEmailAddress"
+                    android:text="@={viewModel.id}" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="30dp"
+                android:paddingEnd="50dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:text="비밀번호"
+                    android:textColor="#444444"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:inputType="textPassword"
+                    android:text="@={viewModel.pw}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pw_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="30dp"
+                android:paddingEnd="50dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:text="이름    "
+                    android:textColor="#444444"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:inputType="text"
+                    android:text="@={viewModel.name}" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="75dp"
+                android:background="#00000000"
+                android:textColor="#444444"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="계정 생성하기"
+                android:onClick="@{()->viewModel.signUp(activity)}"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{viewModel.progressBar}" />
+
+    </FrameLayout>
+</layout>

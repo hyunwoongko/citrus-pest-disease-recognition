@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+nn/data/
+<<<<<<< HEAD
+nn/ckpoint/
+=======
+nn/saved/
+>>>>>>> 2a6ff6512aab7c4229cc2166445629e1d460f443
+*.tflite
+*.hdf5

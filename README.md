@@ -1,7 +1,7 @@
-# Citrus-Pest-Recognition
+# Citrus-Pest-Disease-Recognition
 
-Citrus Pest Recognition Model and Android Application 🐛 <br>
-We use Convolutional Neural Network to classify <br>
+Citrus Pest Disease Recognition Model and Android Application 🐛 <br>
+We use Convolutional Neural Network to classify citrus pests and diseases<br>
 <br><br>
 
 ## 1. App Demo

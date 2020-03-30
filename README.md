@@ -19,7 +19,7 @@ Below table represents about our citrus pest and disease dataset. We have 17 pes
 
 ## 3. Paper
 
-If you use this code for your research, please cite our papers.
+If you use this code for your research, please cite our [papers](https://www.researchgate.net/publication/334610555_Citrus_Pests_and_Diseases_Recognition_Model_Using_Weakly_Dense_Connected_Convolution_Network).
 ```
 @inproceedings{Citrus Pests and Diseases Recognition Model,
   title={Citrus Pests and Diseases Recognition Model Using Weakly Dense Connected Convolution Network},

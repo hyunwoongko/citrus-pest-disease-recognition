@@ -38,7 +38,7 @@
                 android:gravity="center"
                 android:paddingTop="60dp"
                 android:paddingBottom="60dp"
-                android:text="스마트 감귤\n\n병해충 지킴이"
+                android:text="스마트 딸기\n\n병해충 지킴이"
                 android:textColor="#333333"
                 android:textSize="32sp"
                 android:textStyle="bold">
